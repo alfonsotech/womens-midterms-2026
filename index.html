@@ -11,47 +11,49 @@
 <meta name="color-scheme" content="light dark">
 <style>
 :root{
-  --paper:#e8e4d9; --paper-raised:#ded9cb; --ink:#1d1b18; --ink-soft:#35322b; --slate:#5f5b4f; --line:#c9c2b2;
-  --plum:#8a2f5c; --plum-deep:#6e2348; --on-plum:#f6eef1; --on-plum-soft:#e7cdd9;
-  --protect:#8a2f5c; --restrict:#a8701a; --dem:#3d64a8; --rep:#b8473d; --track:#d6d0c1;
+  --paper:#faf8f4; --paper-raised:#f1ede6; --ink:#1d1b18; --ink-soft:#3a3630; --slate:#615c52; --line:#e2dcd1;
+  --plum:#f5ebf0; --plum-deep:#ecdce4; --on-plum:#7a2850; --on-plum-soft:#5a4a52; --field-rule:#e6d3dc;
+  --protect:#8a2f5c; --restrict:#a8701a; --dem:#3d64a8; --rep:#b8473d; --track:#ebe6dc;
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
   --col:40rem; --wide:56rem;
 }
 @media (prefers-color-scheme:dark){
   :root{
-    --paper:#171613; --paper-raised:#201e19; --ink:#e9e4d8; --ink-soft:#cfc9ba; --slate:#a29c8c; --line:#3a362e;
-    --plum:#5a1d3c; --plum-deep:#45162e; --on-plum:#f6eef1; --on-plum-soft:#e2bfd0;
-    --protect:#d2689c; --restrict:#b67f1c; --dem:#5b8ae0; --rep:#d8604f; --track:#2c2924;
+    --paper:#191816; --paper-raised:#22201c; --ink:#ece7dc; --ink-soft:#d2ccbe; --slate:#a59f90; --line:#34302a;
+    --plum:#231b1f; --plum-deep:#2b2026; --on-plum:#eaa9c7; --on-plum-soft:#cdbcc4; --field-rule:#3a2c33;
+    --protect:#d2689c; --restrict:#b67f1c; --dem:#5b8ae0; --rep:#d8604f; --track:#2a2723;
   }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:4rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-::selection{background:var(--plum);color:var(--on-plum)}
+::selection{background:var(--protect);color:#fff}
 :focus-visible{outline:2px solid var(--protect);outline-offset:3px;border-radius:2px}
 a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);text-underline-offset:.18em;text-decoration-thickness:1px}
 a:hover{text-decoration-color:currentColor}
 .tnum{font-variant-numeric:tabular-nums lining-nums}
 
 /* ---------- Masthead ---------- */
-.mast{background:var(--plum);color:var(--on-plum);padding:clamp(1.25rem,3vw,2rem) clamp(1.25rem,5vw,4rem) clamp(2.5rem,6vw,4.5rem);min-height:min(78vh,46rem);display:flex;flex-direction:column}
-.mast ::selection{background:var(--on-plum);color:var(--plum)}
-.mast-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-family:var(--sans);font-size:.8125rem;letter-spacing:.01em;border-bottom:1px solid color-mix(in srgb,var(--on-plum) 30%,transparent);padding-bottom:.75rem}
+.mast{background:var(--plum);color:var(--on-plum);padding:clamp(1.25rem,3vw,2rem) clamp(1.25rem,5vw,4rem) clamp(2.5rem,6vw,4.5rem);min-height:min(70vh,40rem);border-bottom:1px solid var(--field-rule);display:flex;flex-direction:column}
+.mast ::selection{background:var(--protect);color:#fff}
+.mast-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-family:var(--sans);font-size:.8125rem;letter-spacing:.01em;border-bottom:1px solid var(--field-rule);padding-bottom:.75rem;color:var(--on-plum-soft)}
 .pub{font-family:var(--serif);font-size:1.125rem;font-weight:600;letter-spacing:0}
 .mast-body{margin-top:auto;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,5rem);align-items:end;max-width:78rem;padding-top:3rem}
-h1{font-weight:400;font-size:clamp(2.5rem,6.4vw,5.25rem);line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
-.dek{font-size:clamp(1.0625rem,1.6vw,1.25rem);line-height:1.5;color:var(--on-plum-soft);max-width:34rem;margin:1.5rem 0 0}
+h1{font-weight:400;color:var(--on-plum);font-size:clamp(2.5rem,6.4vw,5.25rem);line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.dek{font-size:clamp(1.0625rem,1.6vw,1.25rem);line-height:1.5;color:var(--ink-soft);max-width:34rem;margin:1.5rem 0 0}
 .hero-fig{display:grid;grid-template-columns:auto 1fr;gap:1.25rem;align-items:end}
 .hero-num{font-size:clamp(7rem,17vw,13.5rem);line-height:.78;letter-spacing:-.04em;font-weight:400}
-.hero-cap{font-size:clamp(1.125rem,1.8vw,1.4rem);line-height:1.3;padding-bottom:.5rem;text-wrap:balance}
+.hero-cap{color:var(--ink);font-size:clamp(1.125rem,1.8vw,1.4rem);line-height:1.3;padding-bottom:.5rem;text-wrap:balance}
 .hero-cap small{display:block;font-family:var(--sans);font-size:.8125rem;color:var(--on-plum-soft);margin-top:.6rem;line-height:1.45}
 
 /* ---------- Rail ---------- */
 .rail{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
 .rail ol{list-style:none;margin:0 auto;padding:0 clamp(.5rem,4vw,1.3rem);display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none;max-width:var(--wide)}
 .rail ol::-webkit-scrollbar{display:none}
+.rail{--fade:2.5rem}
+@media (max-width:56rem){.rail ol{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - var(--fade)),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - var(--fade)),transparent);padding-right:var(--fade)}}
 .rail a{display:block;white-space:nowrap;font-family:var(--sans);font-size:.875rem;padding:.9rem .7rem .8rem;text-decoration:none;color:var(--slate);border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
 .rail a:hover{color:var(--ink)}
 .rail a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--protect)}
@@ -63,11 +65,11 @@ h1{font-weight:400;font-size:clamp(2.5rem,6.4vw,5.25rem);line-height:1.02;letter
 
 /* ---------- Chapters ---------- */
 .chapter{margin-top:clamp(3.5rem,8vw,6rem)}
-.opener{background:var(--plum);color:var(--on-plum);padding:clamp(2rem,5vw,3.5rem) clamp(1.25rem,5vw,4rem)}
-.opener ::selection{background:var(--on-plum);color:var(--plum)}
+.opener{background:var(--plum);color:var(--on-plum);border-top:1px solid var(--field-rule);border-bottom:1px solid var(--field-rule);padding:clamp(2rem,5vw,3.5rem) clamp(1.25rem,5vw,4rem)}
+.opener ::selection{background:var(--protect);color:#fff}
 .opener-in{max-width:78rem;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end}
 .opener h2{font-weight:400;font-size:clamp(2rem,4.6vw,3.5rem);line-height:1.05;letter-spacing:-.015em;margin:0;text-wrap:balance}
-.opener p{margin:.9rem 0 0;color:var(--on-plum-soft);max-width:36rem;font-size:1.0625rem;line-height:1.5}
+.opener p{margin:.9rem 0 0;color:var(--ink-soft);max-width:36rem;font-size:1.0625rem;line-height:1.5}
 .big{text-align:right}
 .big b{display:block;font-weight:400;font-size:clamp(4.5rem,11vw,8.5rem);line-height:.82;letter-spacing:-.035em}
 .big span{display:block;font-family:var(--sans);font-size:.8125rem;color:var(--on-plum-soft);margin-top:.6rem;max-width:15rem;margin-left:auto;line-height:1.4}
@@ -100,7 +102,7 @@ figcaption.t + .sub{font-family:var(--sans);font-size:.8125rem;color:var(--slate
 .row{display:grid;grid-template-columns:minmax(8rem,13rem) 1fr 8.75rem;gap:.9rem;align-items:center;position:relative;border-radius:4px;outline-offset:4px}
 .row .lab{font-size:.875rem;line-height:1.3;color:var(--ink)}
 .row .lab small{display:block;color:var(--slate);font-size:.75rem}
-.trk{position:relative;height:1.25rem;background:var(--track);border-radius:0 4px 4px 0}
+.trk{position:relative;height:.875rem;background:var(--track);border-radius:0 4px 4px 0}
 .fill{position:absolute;inset:0 auto 0 0;border-radius:0 4px 4px 0;transform-origin:left center}
 .val{font-size:.875rem;font-weight:600;text-align:left;white-space:nowrap}
 .half{position:absolute;top:-.35rem;bottom:-.35rem;left:50%;width:1px;background:var(--ink);opacity:.55}
@@ -125,12 +127,12 @@ figcaption.t + .sub{font-family:var(--sans);font-size:.8125rem;color:var(--slate
 .mini .num small{font-family:var(--sans);font-size:.875rem;letter-spacing:0;color:var(--slate);margin-left:.35rem}
 .mini p{font-family:var(--sans);font-size:.875rem;color:var(--ink-soft);margin:.4rem 0 .8rem;line-height:1.45}
 .pair{display:grid;gap:.4rem}
-.pair div{display:grid;grid-template-columns:6.5rem 1fr 2.5rem;align-items:center;gap:.6rem;font-family:var(--sans);font-size:.8125rem}
-.pair .trk{height:.9rem}
+.pair div{min-height:28px;display:grid;grid-template-columns:6.5rem 1fr 2.5rem;align-items:center;gap:.6rem;font-family:var(--sans);font-size:.8125rem}
+.pair .trk{height:.75rem}
 
 /* AK race */
 .race{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.25rem 0;margin:1.75rem 0}
-.race .trk{height:1.5rem;display:flex;gap:2px;background:var(--track);border-radius:4px;overflow:hidden}
+.race .trk{height:1.125rem;display:flex;gap:2px;background:var(--track);border-radius:4px;overflow:hidden}
 .race .seg{height:100%}
 .race-l{display:flex;justify-content:space-between;font-family:var(--sans);font-size:.875rem;margin-bottom:.5rem;gap:1rem}
 .race-l b{font-weight:600}
@@ -143,8 +145,11 @@ figcaption.t + .sub{font-family:var(--sans);font-size:.8125rem;color:var(--slate
 
 /* table view */
 details.tv{margin:.75rem 0 0;font-family:var(--sans);font-size:.8125rem}
-details.tv summary{cursor:pointer;color:var(--slate);width:max-content}
+details.tv summary{cursor:pointer;color:var(--slate);width:max-content;padding:.6rem 0;min-height:44px;display:flex;align-items:center;gap:.35rem}
 details.tv summary:hover{color:var(--ink)}
+details.tv summary::-webkit-details-marker{display:none}
+details.tv summary::before{content:"";width:.4rem;height:.4rem;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg);transition:transform .2s;margin-right:.2rem}
+details.tv[open] summary::before{transform:rotate(45deg)}
 table{border-collapse:collapse;width:100%;margin-top:.75rem;font-variant-numeric:tabular-nums}
 th,td{text-align:left;padding:.45rem .6rem .45rem 0;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-weight:600;color:var(--ink-soft)}
@@ -158,8 +163,8 @@ ul.prose li{margin-bottom:.5rem}
 .sources{max-width:var(--wide);margin:clamp(3.5rem,8vw,6rem) auto 0;padding:0 clamp(1.25rem,5vw,2rem)}
 .sources h2{font-weight:400;font-size:2rem;margin:0 0 1rem;border-top:1px solid var(--ink);padding-top:1.25rem}
 .sources ol{font-family:var(--sans);font-size:.875rem;line-height:1.5;color:var(--ink-soft);padding-left:1.25rem;columns:2 20rem;column-gap:2.5rem}
-.sources li{margin-bottom:.5rem;break-inside:avoid}
-footer{background:var(--plum);color:var(--on-plum-soft);margin-top:4rem;padding:2.5rem clamp(1.25rem,5vw,4rem);font-family:var(--sans);font-size:.8125rem}
+.sources li{margin-bottom:.85rem;break-inside:avoid}
+footer{background:var(--plum);color:var(--on-plum-soft);border-top:1px solid var(--field-rule);margin-top:4rem;padding:2.5rem clamp(1.25rem,5vw,4rem);font-family:var(--sans);font-size:.8125rem}
 footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
 
 /* motion: only when JS opts in, so no-JS readers see full bars */
@@ -184,6 +189,11 @@ footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
   .compare{grid-template-columns:1fr;gap:2rem}
 }
 @media (max-width:34rem){
+  .mast-top{flex-direction:column;gap:.2rem}
+  .hero-fig{grid-template-columns:1fr;gap:.5rem}
+  .hero-num{font-size:7.5rem}
+  .hero-cap{padding-bottom:0}
+  .rail a{padding:.95rem .65rem .85rem}
   .row{grid-template-columns:1fr 8.25rem;gap:.35rem .75rem}
   .row .lab{grid-column:1 / -1}
   .half-lab{margin-left:0}
@@ -316,7 +326,7 @@ footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
       <h2 id="h-con">More Firsts, but Fewer Women in Congress So Far</h2>
       <p>CAWP's early projection shows fewer women in the 120th Congress than serve now, even in a Democratic wave. Dozens of House races are uncalled, so the number will move.</p>
     </div>
-    <div class="big"><b class="tnum">139</b><span>women projected for the next Congress, down from 152 now <span class="prelim" style="display:inline-block;margin-top:.4rem;background:transparent;color:var(--on-plum);border-color:var(--on-plum-soft)">Preliminary</span></span></div>
+    <div class="big"><b class="tnum">139</b><span>women projected for the next Congress, down from 152 now <span class="prelim" style="display:inline-block;margin-top:.4rem">Preliminary</span></span></div>
   </div></div>
 
   <div class="body">
