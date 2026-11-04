@@ -8,36 +8,29 @@
 <meta property="og:title" content="A Women's Look at the 2026 Midterms">
 <meta property="og:description" content="Record governorships, Senate firsts, abortion on the ballot, trans women's wins, and how women voted. Every number sourced.">
 <meta property="og:type" content="article">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <style>
 :root{
-  --paper:#faf8f4; --paper-raised:#f1ede6; --ink:#1d1b18; --ink-soft:#3a3630; --slate:#615c52; --line:#e2dcd1;
-  --plum:#f5ebf0; --plum-deep:#ecdce4; --on-plum:#7a2850; --on-plum-soft:#5a4a52; --field-rule:#e6d3dc;
-  --protect:#8a2f5c; --restrict:#a8701a; --dem:#3d64a8; --rep:#b8473d; --track:#ebe6dc;
+  --paper:#ffffff; --paper-raised:#f4f3f1; --ink:#161514; --ink-soft:#3b3936; --slate:#615e59; --line:#e4e2de;
+  --plum:#f7f6f4; --on-plum:#161514; --on-plum-soft:#55524d; --field-rule:#e4e2de;
+  --protect:#008a6e; --restrict:#5a4fb0; --accent:#fdde0f; --dem:#3d64a8; --rep:#b8473d; --track:#eeedea;
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
   --col:40rem; --wide:56rem;
-}
-@media (prefers-color-scheme:dark){
-  :root{
-    --paper:#191816; --paper-raised:#22201c; --ink:#ece7dc; --ink-soft:#d2ccbe; --slate:#a59f90; --line:#34302a;
-    --plum:#231b1f; --plum-deep:#2b2026; --on-plum:#eaa9c7; --on-plum-soft:#cdbcc4; --field-rule:#3a2c33;
-    --protect:#d2689c; --restrict:#b67f1c; --dem:#5b8ae0; --rep:#d8604f; --track:#2a2723;
-  }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:4rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-::selection{background:var(--protect);color:#fff}
-:focus-visible{outline:2px solid var(--protect);outline-offset:3px;border-radius:2px}
+::selection{background:var(--accent);color:var(--ink)}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
 a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);text-underline-offset:.18em;text-decoration-thickness:1px}
 a:hover{text-decoration-color:currentColor}
 .tnum{font-variant-numeric:tabular-nums lining-nums}
 
 /* ---------- Masthead ---------- */
-.mast{background:var(--plum);color:var(--on-plum);padding:clamp(1.25rem,3vw,2rem) clamp(1.25rem,5vw,4rem) clamp(2.5rem,6vw,4.5rem);min-height:min(70vh,40rem);border-bottom:1px solid var(--field-rule);display:flex;flex-direction:column}
-.mast ::selection{background:var(--protect);color:#fff}
+.mast{background:var(--paper);border-top:8px solid var(--accent);color:var(--on-plum);padding:clamp(1.25rem,3vw,2rem) clamp(1.25rem,5vw,4rem) clamp(2.5rem,6vw,4.5rem);min-height:min(70vh,40rem);border-bottom:1px solid var(--field-rule);display:flex;flex-direction:column}
+.mast ::selection{background:var(--accent);color:var(--ink)}
 .mast-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-family:var(--sans);font-size:.8125rem;letter-spacing:.01em;border-bottom:1px solid var(--field-rule);padding-bottom:.75rem;color:var(--on-plum-soft)}
 .pub{font-family:var(--serif);font-size:1.125rem;font-weight:600;letter-spacing:0}
 .mast-body{margin-top:auto;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,5rem);align-items:end;max-width:78rem;padding-top:3rem}
@@ -54,9 +47,9 @@ h1{font-weight:400;color:var(--on-plum);font-size:clamp(2.5rem,6.4vw,5.25rem);li
 .rail ol::-webkit-scrollbar{display:none}
 .rail{--fade:2.5rem}
 @media (max-width:56rem){.rail ol{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - var(--fade)),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - var(--fade)),transparent);padding-right:var(--fade)}}
-.rail a{display:block;white-space:nowrap;font-family:var(--sans);font-size:.875rem;padding:.9rem .7rem .8rem;text-decoration:none;color:var(--slate);border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.rail a{display:block;border-bottom-width:3px!important;white-space:nowrap;font-family:var(--sans);font-size:.875rem;padding:.9rem .7rem .8rem;text-decoration:none;color:var(--slate);border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
 .rail a:hover{color:var(--ink)}
-.rail a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--protect)}
+.rail a[aria-current="true"]{color:var(--ink);font-weight:600;border-bottom:3px solid var(--accent);box-shadow:inset 0 -1px 0 var(--ink)}
 
 /* ---------- Context strip ---------- */
 .context{max-width:var(--wide);margin:0 auto;padding:2.75rem clamp(1.25rem,5vw,2rem) 0}
@@ -65,8 +58,8 @@ h1{font-weight:400;color:var(--on-plum);font-size:clamp(2.5rem,6.4vw,5.25rem);li
 
 /* ---------- Chapters ---------- */
 .chapter{margin-top:clamp(3.5rem,8vw,6rem)}
-.opener{background:var(--plum);color:var(--on-plum);border-top:1px solid var(--field-rule);border-bottom:1px solid var(--field-rule);padding:clamp(2rem,5vw,3.5rem) clamp(1.25rem,5vw,4rem)}
-.opener ::selection{background:var(--protect);color:#fff}
+.opener{background:var(--plum);border-top:4px solid var(--accent)!important;color:var(--on-plum);border-top:1px solid var(--field-rule);border-bottom:1px solid var(--field-rule);padding:clamp(2rem,5vw,3.5rem) clamp(1.25rem,5vw,4rem)}
+.opener ::selection{background:var(--accent);color:var(--ink)}
 .opener-in{max-width:78rem;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end}
 .opener h2{font-weight:400;font-size:clamp(2rem,4.6vw,3.5rem);line-height:1.05;letter-spacing:-.015em;margin:0;text-wrap:balance}
 .opener p{margin:.9rem 0 0;color:var(--ink-soft);max-width:36rem;font-size:1.0625rem;line-height:1.5}
@@ -90,7 +83,7 @@ h3:first-child{margin-top:0}
 .nm{font-size:1.125rem;line-height:1.3;font-weight:600}
 .pt{display:block;font-family:var(--sans);font-size:.75rem;color:var(--slate);font-weight:400;margin:.15rem 0 .2rem;letter-spacing:.01em}
 .ft{font-size:.95rem;line-height:1.4;color:var(--ink-soft)}
-.roster li.first .ft::before{content:"";display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--protect);margin-right:.45rem;vertical-align:.08em}
+.roster li.first .ft::before{content:"";display:inline-block;width:.5rem;height:.5rem;border-radius:50%;margin-right:.45rem;vertical-align:.08em;background:var(--accent);box-shadow:0 0 0 1px var(--ink)}
 .roster li.pending{color:var(--slate)}
 .roster li.pending .nm{font-weight:400;font-style:italic;color:var(--slate)}
 
@@ -108,8 +101,8 @@ figcaption.t + .sub{font-family:var(--sans);font-size:.8125rem;color:var(--slate
 .half{position:absolute;top:-.35rem;bottom:-.35rem;left:50%;width:1px;background:var(--ink);opacity:.55}
 .half-lab{font-family:var(--sans);font-size:.6875rem;color:var(--slate);position:relative;margin-left:calc(min(13rem, 40%) + .9rem)}
 .out{font-size:.75rem;font-weight:600;letter-spacing:.01em;padding:.12rem .5rem;border-radius:3px;white-space:nowrap}
-.out.ok{background:color-mix(in srgb,var(--protect) 16%,transparent);color:var(--ink)}
-.out.no{background:color-mix(in srgb,var(--restrict) 20%,transparent);color:var(--ink)}
+.out.ok{background:var(--paper-raised);color:var(--ink);border:1px solid var(--line)}
+.out.no{background:var(--paper-raised);color:var(--ink);border:1px solid var(--line)}
 .out.tbd{background:var(--paper-raised);color:var(--ink-soft);border:1px solid var(--line)}
 .legend{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin:0 0 1rem}
 .legend i{display:inline-block;width:.75rem;height:.75rem;border-radius:2px;margin-right:.4rem;vertical-align:-.08em}
@@ -164,7 +157,7 @@ ul.prose li{margin-bottom:.5rem}
 .sources h2{font-weight:400;font-size:2rem;margin:0 0 1rem;border-top:1px solid var(--ink);padding-top:1.25rem}
 .sources ol{font-family:var(--sans);font-size:.875rem;line-height:1.5;color:var(--ink-soft);padding-left:1.25rem;columns:2 20rem;column-gap:2.5rem}
 .sources li{margin-bottom:.85rem;break-inside:avoid}
-footer{background:var(--plum);color:var(--on-plum-soft);border-top:1px solid var(--field-rule);margin-top:4rem;padding:2.5rem clamp(1.25rem,5vw,4rem);font-family:var(--sans);font-size:.8125rem}
+footer{background:var(--paper);color:var(--on-plum-soft);border-top:1px solid var(--field-rule);margin-top:4rem;padding:2.5rem clamp(1.25rem,5vw,4rem);font-family:var(--sans);font-size:.8125rem}
 footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
 
 /* motion: only when JS opts in, so no-JS readers see full bars */
@@ -191,6 +184,7 @@ footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
 @media (max-width:34rem){
   .mast-top{flex-direction:column;gap:.2rem}
   .hero-fig{grid-template-columns:1fr;gap:.5rem}
+  .hero-num{justify-self:start}
   .hero-num{font-size:7.5rem}
   .hero-cap{padding-bottom:0}
   .rail a{padding:.95rem .65rem .85rem}
@@ -200,6 +194,12 @@ footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
   .split .val{min-width:auto}
 }
 @media print{.rail,.tip{display:none}.mast,.opener,footer{background:none;color:var(--ink)}}
+.hero-num,.big b{background:linear-gradient(transparent 58%,var(--accent) 58%,var(--accent) 88%,transparent 88%);padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.big b{display:inline-block}
+.big{display:flex;flex-direction:column;align-items:flex-end}
+.mini .num{background:linear-gradient(transparent 60%,var(--accent) 60%,var(--accent) 90%,transparent 90%);display:inline-block}
+.pull{border-top:4px solid var(--accent);padding-top:1.25rem}
+@media (max-width:52rem){.big{align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -273,8 +273,8 @@ footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
       <figcaption class="t">Black Women in Statewide Executive Office</figcaption>
       <p class="sub">At least 18 Black women are set to serve in statewide elected executive offices, up from a previous record of 11.</p>
       <div class="bars grow">
-        <div class="row" tabindex="0" data-tip="Previous record: 11 Black women in statewide elected executive office at once. Source: CAWP via ABC News."><span class="lab">Previous record</span><div class="trk"><div class="fill" style="width:61.1%;background:var(--slate)"></div></div><span class="val tnum">11</span></div>
-        <div class="row" tabindex="0" data-tip="After Nov. 3, 2026: at least 18. Source: CAWP via ABC News, Nov. 4."><span class="lab">After Nov. 3<small>at least</small></span><div class="trk"><div class="fill" style="width:100%;background:var(--protect)"></div></div><span class="val tnum">18+</span></div>
+        <div class="row" tabindex="0" data-tip="Previous record: 11 Black women in statewide elected executive office at once. Source: CAWP via ABC News."><span class="lab">Previous record</span><div class="trk"><div class="fill" style="width:61.1%;background:#b9b6b0"></div></div><span class="val tnum">11</span></div>
+        <div class="row" tabindex="0" data-tip="After Nov. 3, 2026: at least 18. Source: CAWP via ABC News, Nov. 4."><span class="lab">After Nov. 3<small>at least</small></span><div class="trk"><div class="fill" style="width:100%;background:var(--ink)"></div></div><span class="val tnum">18+</span></div>
       </div>
     </figure>
 
@@ -282,8 +282,8 @@ footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
       <figcaption class="t">Women Nominated for Governor by a Major Party</figcaption>
       <p class="sub">A record 26 general-election nominees, one more than 2022.</p>
       <div class="bars grow">
-        <div class="row" tabindex="0" data-tip="2022: 25 women were major-party nominees for governor, the prior record. Source: CAWP via ABC News."><span class="lab">2022</span><div class="trk"><div class="fill" style="width:96.2%;background:var(--slate)"></div></div><span class="val tnum">25</span></div>
-        <div class="row" tabindex="0" data-tip="2026: 26 women were major-party nominees for governor. Source: CAWP via ABC News."><span class="lab">2026</span><div class="trk"><div class="fill" style="width:100%;background:var(--protect)"></div></div><span class="val tnum">26</span></div>
+        <div class="row" tabindex="0" data-tip="2022: 25 women were major-party nominees for governor, the prior record. Source: CAWP via ABC News."><span class="lab">2022</span><div class="trk"><div class="fill" style="width:96.2%;background:#b9b6b0"></div></div><span class="val tnum">25</span></div>
+        <div class="row" tabindex="0" data-tip="2026: 26 women were major-party nominees for governor. Source: CAWP via ABC News."><span class="lab">2026</span><div class="trk"><div class="fill" style="width:100%;background:var(--ink)"></div></div><span class="val tnum">26</span></div>
       </div>
     </figure>
   </div>
@@ -334,8 +334,8 @@ footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
       <figcaption class="t">Women in Congress</figcaption>
       <p class="sub">Senate and House combined. The 2027 figure is CAWP's projection as of Nov. 4 and excludes uncalled races.</p>
       <div class="bars grow">
-        <div class="row" tabindex="0" data-tip="Women serving in the current (119th) Congress: 152. Source: CAWP via ABC News."><span class="lab">Serving now</span><div class="trk"><div class="fill" style="width:100%;background:var(--slate)"></div></div><span class="val tnum">152</span></div>
-        <div class="row" tabindex="0" data-tip="Projected for the 120th Congress, beginning January 2027: 139, as of Nov. 4. Uncalled races excluded. Source: CAWP via ABC News."><span class="lab">Projected, Jan. 2027<small>as of Nov. 4</small></span><div class="trk"><div class="fill" style="width:91.4%;background:var(--protect)"></div></div><span class="val tnum">139</span></div>
+        <div class="row" tabindex="0" data-tip="Women serving in the current (119th) Congress: 152. Source: CAWP via ABC News."><span class="lab">Serving now</span><div class="trk"><div class="fill" style="width:100%;background:#b9b6b0"></div></div><span class="val tnum">152</span></div>
+        <div class="row" tabindex="0" data-tip="Projected for the 120th Congress, beginning January 2027: 139, as of Nov. 4. Uncalled races excluded. Source: CAWP via ABC News."><span class="lab">Projected, Jan. 2027<small>as of Nov. 4</small></span><div class="trk"><div class="fill" style="width:91.4%;background:var(--ink)"></div></div><span class="val tnum">139</span></div>
       </div>
     </figure>
 
