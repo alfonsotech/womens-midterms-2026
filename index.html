@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Women's Look at the 2026 Midterms · Feminist Works</title>
+<meta name="description" content="The 2026 midterm results that matter to women and trans women: record governorships, Senate firsts, abortion ballot measures, trans candidates, and the gender gap. Sourced, as of Nov. 4, 2026.">
+<meta property="og:title" content="A Women's Look at the 2026 Midterms">
+<meta property="og:description" content="Record governorships, Senate firsts, abortion on the ballot, trans women's wins, and how women voted. Every number sourced.">
+<meta property="og:type" content="article">
+<meta name="color-scheme" content="light dark">
+<style>
+:root{
+  --paper:#e8e4d9; --paper-raised:#ded9cb; --ink:#1d1b18; --ink-soft:#35322b; --slate:#5f5b4f; --line:#c9c2b2;
+  --plum:#8a2f5c; --plum-deep:#6e2348; --on-plum:#f6eef1; --on-plum-soft:#e7cdd9;
+  --protect:#8a2f5c; --restrict:#a8701a; --dem:#3d64a8; --rep:#b8473d; --track:#d6d0c1;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --col:40rem; --wide:56rem;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#171613; --paper-raised:#201e19; --ink:#e9e4d8; --ink-soft:#cfc9ba; --slate:#a29c8c; --line:#3a362e;
+    --plum:#5a1d3c; --plum-deep:#45162e; --on-plum:#f6eef1; --on-plum-soft:#e2bfd0;
+    --protect:#d2689c; --restrict:#b67f1c; --dem:#5b8ae0; --rep:#d8604f; --track:#2c2924;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--plum);color:var(--on-plum)}
+:focus-visible{outline:2px solid var(--protect);outline-offset:3px;border-radius:2px}
+a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-color:currentColor}
+.tnum{font-variant-numeric:tabular-nums lining-nums}
+
+/* ---------- Masthead ---------- */
+.mast{background:var(--plum);color:var(--on-plum);padding:clamp(1.25rem,3vw,2rem) clamp(1.25rem,5vw,4rem) clamp(2.5rem,6vw,4.5rem);min-height:min(78vh,46rem);display:flex;flex-direction:column}
+.mast ::selection{background:var(--on-plum);color:var(--plum)}
+.mast-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-family:var(--sans);font-size:.8125rem;letter-spacing:.01em;border-bottom:1px solid color-mix(in srgb,var(--on-plum) 30%,transparent);padding-bottom:.75rem}
+.pub{font-family:var(--serif);font-size:1.125rem;font-weight:600;letter-spacing:0}
+.mast-body{margin-top:auto;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,5rem);align-items:end;max-width:78rem;padding-top:3rem}
+h1{font-weight:400;font-size:clamp(2.5rem,6.4vw,5.25rem);line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.dek{font-size:clamp(1.0625rem,1.6vw,1.25rem);line-height:1.5;color:var(--on-plum-soft);max-width:34rem;margin:1.5rem 0 0}
+.hero-fig{display:grid;grid-template-columns:auto 1fr;gap:1.25rem;align-items:end}
+.hero-num{font-size:clamp(7rem,17vw,13.5rem);line-height:.78;letter-spacing:-.04em;font-weight:400}
+.hero-cap{font-size:clamp(1.125rem,1.8vw,1.4rem);line-height:1.3;padding-bottom:.5rem;text-wrap:balance}
+.hero-cap small{display:block;font-family:var(--sans);font-size:.8125rem;color:var(--on-plum-soft);margin-top:.6rem;line-height:1.45}
+
+/* ---------- Rail ---------- */
+.rail{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.rail ol{list-style:none;margin:0 auto;padding:0 clamp(.5rem,4vw,1.3rem);display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none;max-width:var(--wide)}
+.rail ol::-webkit-scrollbar{display:none}
+.rail a{display:block;white-space:nowrap;font-family:var(--sans);font-size:.875rem;padding:.9rem .7rem .8rem;text-decoration:none;color:var(--slate);border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.rail a:hover{color:var(--ink)}
+.rail a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--protect)}
+
+/* ---------- Context strip ---------- */
+.context{max-width:var(--wide);margin:0 auto;padding:2.75rem clamp(1.25rem,5vw,2rem) 0}
+.context p{font-size:1rem;color:var(--ink-soft);max-width:var(--col);margin:0}
+.context strong{color:var(--ink);font-weight:600}
+
+/* ---------- Chapters ---------- */
+.chapter{margin-top:clamp(3.5rem,8vw,6rem)}
+.opener{background:var(--plum);color:var(--on-plum);padding:clamp(2rem,5vw,3.5rem) clamp(1.25rem,5vw,4rem)}
+.opener ::selection{background:var(--on-plum);color:var(--plum)}
+.opener-in{max-width:78rem;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end}
+.opener h2{font-weight:400;font-size:clamp(2rem,4.6vw,3.5rem);line-height:1.05;letter-spacing:-.015em;margin:0;text-wrap:balance}
+.opener p{margin:.9rem 0 0;color:var(--on-plum-soft);max-width:36rem;font-size:1.0625rem;line-height:1.5}
+.big{text-align:right}
+.big b{display:block;font-weight:400;font-size:clamp(4.5rem,11vw,8.5rem);line-height:.82;letter-spacing:-.035em}
+.big span{display:block;font-family:var(--sans);font-size:.8125rem;color:var(--on-plum-soft);margin-top:.6rem;max-width:15rem;margin-left:auto;line-height:1.4}
+
+.body{max-width:var(--wide);margin:0 auto;padding:2.5rem clamp(1.25rem,5vw,2rem) 0}
+.body > p, .body > h3, .body > ul.prose{max-width:var(--col)}
+.body p{margin:0 0 1.1rem}
+h3{font-weight:600;font-size:1.3rem;line-height:1.3;margin:3rem 0 .6rem;letter-spacing:-.005em;text-wrap:balance}
+h3:first-child{margin-top:0}
+.src{font-family:var(--sans);font-size:.8125rem;color:var(--slate);line-height:1.45}
+.src a{color:var(--slate)}
+.prelim{font-family:var(--sans);font-size:.75rem;font-weight:600;letter-spacing:.02em;padding:.1rem .45rem;border-radius:3px;background:var(--paper-raised);color:var(--ink-soft);border:1px solid var(--line);white-space:nowrap;vertical-align:.1em}
+
+/* ---------- Roster ---------- */
+.roster{list-style:none;padding:0;margin:1.5rem 0 1rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));border-top:1px solid var(--line)}
+.roster li{padding:1rem 1rem 1.1rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:3.3rem 1fr;gap:.15rem .75rem;align-content:start}
+.st{grid-row:span 2;white-space:nowrap;font-family:var(--sans);font-size:.8125rem;font-weight:600;letter-spacing:.04em;color:var(--slate);padding-top:.3rem}
+.nm{font-size:1.125rem;line-height:1.3;font-weight:600}
+.pt{display:block;font-family:var(--sans);font-size:.75rem;color:var(--slate);font-weight:400;margin:.15rem 0 .2rem;letter-spacing:.01em}
+.ft{font-size:.95rem;line-height:1.4;color:var(--ink-soft)}
+.roster li.first .ft::before{content:"";display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--protect);margin-right:.45rem;vertical-align:.08em}
+.roster li.pending{color:var(--slate)}
+.roster li.pending .nm{font-weight:400;font-style:italic;color:var(--slate)}
+
+/* ---------- Bar charts ---------- */
+figure{margin:2rem 0 1rem}
+figcaption.t{font-family:var(--sans);font-weight:600;font-size:.9375rem;margin-bottom:.25rem;color:var(--ink)}
+figcaption.t + .sub{font-family:var(--sans);font-size:.8125rem;color:var(--slate);margin:0 0 1rem}
+.bars{display:grid;gap:.85rem;font-family:var(--sans)}
+.row{display:grid;grid-template-columns:minmax(8rem,13rem) 1fr 8.75rem;gap:.9rem;align-items:center;position:relative;border-radius:4px;outline-offset:4px}
+.row .lab{font-size:.875rem;line-height:1.3;color:var(--ink)}
+.row .lab small{display:block;color:var(--slate);font-size:.75rem}
+.trk{position:relative;height:1.25rem;background:var(--track);border-radius:0 4px 4px 0}
+.fill{position:absolute;inset:0 auto 0 0;border-radius:0 4px 4px 0;transform-origin:left center}
+.val{font-size:.875rem;font-weight:600;text-align:left;white-space:nowrap}
+.half{position:absolute;top:-.35rem;bottom:-.35rem;left:50%;width:1px;background:var(--ink);opacity:.55}
+.half-lab{font-family:var(--sans);font-size:.6875rem;color:var(--slate);position:relative;margin-left:calc(min(13rem, 40%) + .9rem)}
+.out{font-size:.75rem;font-weight:600;letter-spacing:.01em;padding:.12rem .5rem;border-radius:3px;white-space:nowrap}
+.out.ok{background:color-mix(in srgb,var(--protect) 16%,transparent);color:var(--ink)}
+.out.no{background:color-mix(in srgb,var(--restrict) 20%,transparent);color:var(--ink)}
+.out.tbd{background:var(--paper-raised);color:var(--ink-soft);border:1px solid var(--line)}
+.legend{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;font-family:var(--sans);font-size:.8125rem;color:var(--ink-soft);margin:0 0 1rem}
+.legend i{display:inline-block;width:.75rem;height:.75rem;border-radius:2px;margin-right:.4rem;vertical-align:-.08em}
+
+/* split D/R bars */
+.split .trk{background:var(--track);display:flex;gap:2px;border-radius:4px;overflow:hidden}
+.split .fill{position:static;height:100%;border-radius:0}
+.split .d{background:var(--dem)} .split .r{background:var(--rep)}
+.split .val{font-weight:400;color:var(--ink-soft)}
+.split .val b{color:var(--ink)}
+
+/* compare columns */
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem;margin:1.5rem 0}
+.mini .num{font-size:3.25rem;line-height:1;letter-spacing:-.03em}
+.mini .num small{font-family:var(--sans);font-size:.875rem;letter-spacing:0;color:var(--slate);margin-left:.35rem}
+.mini p{font-family:var(--sans);font-size:.875rem;color:var(--ink-soft);margin:.4rem 0 .8rem;line-height:1.45}
+.pair{display:grid;gap:.4rem}
+.pair div{display:grid;grid-template-columns:6.5rem 1fr 2.5rem;align-items:center;gap:.6rem;font-family:var(--sans);font-size:.8125rem}
+.pair .trk{height:.9rem}
+
+/* AK race */
+.race{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.25rem 0;margin:1.75rem 0}
+.race .trk{height:1.5rem;display:flex;gap:2px;background:var(--track);border-radius:4px;overflow:hidden}
+.race .seg{height:100%}
+.race-l{display:flex;justify-content:space-between;font-family:var(--sans);font-size:.875rem;margin-bottom:.5rem;gap:1rem}
+.race-l b{font-weight:600}
+
+/* tooltip */
+.tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:.8125rem;line-height:1.4;padding:.55rem .7rem;border-radius:6px;max-width:17rem;box-shadow:0 6px 20px -6px rgba(0,0,0,.35);opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s}
+.tip.on{opacity:1;transform:none}
+[data-tip]{cursor:default}
+[data-tip]:hover .fill,[data-tip]:focus-visible .fill{filter:brightness(1.08)}
+
+/* table view */
+details.tv{margin:.75rem 0 0;font-family:var(--sans);font-size:.8125rem}
+details.tv summary{cursor:pointer;color:var(--slate);width:max-content}
+details.tv summary:hover{color:var(--ink)}
+table{border-collapse:collapse;width:100%;margin-top:.75rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.45rem .6rem .45rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--ink-soft)}
+
+ul.prose{padding-left:1.1rem;margin:0 0 1.25rem}
+ul.prose li{margin-bottom:.5rem}
+.pull{font-size:clamp(1.375rem,2.6vw,1.75rem);line-height:1.35;margin:2.5rem 0;max-width:36rem;text-wrap:balance}
+.pull cite{display:block;font-style:normal;font-family:var(--sans);font-size:.8125rem;color:var(--slate);margin-top:.75rem}
+
+/* sources + footer */
+.sources{max-width:var(--wide);margin:clamp(3.5rem,8vw,6rem) auto 0;padding:0 clamp(1.25rem,5vw,2rem)}
+.sources h2{font-weight:400;font-size:2rem;margin:0 0 1rem;border-top:1px solid var(--ink);padding-top:1.25rem}
+.sources ol{font-family:var(--sans);font-size:.875rem;line-height:1.5;color:var(--ink-soft);padding-left:1.25rem;columns:2 20rem;column-gap:2.5rem}
+.sources li{margin-bottom:.5rem;break-inside:avoid}
+footer{background:var(--plum);color:var(--on-plum-soft);margin-top:4rem;padding:2.5rem clamp(1.25rem,5vw,4rem);font-family:var(--sans);font-size:.8125rem}
+footer .pub{color:var(--on-plum);display:block;margin-bottom:.4rem}
+
+/* motion: only when JS opts in, so no-JS readers see full bars */
+.js .grow .fill{transform:scaleX(0);transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.js .grow.in .fill{transform:scaleX(1)}
+.js .grow.in .row:nth-child(2) .fill{transition-delay:.06s}
+.js .grow.in .row:nth-child(3) .fill{transition-delay:.12s}
+.js .grow.in .row:nth-child(4) .fill{transition-delay:.18s}
+.js .grow.in .row:nth-child(5) .fill{transition-delay:.24s}
+.js .grow.in .row:nth-child(6) .fill{transition-delay:.3s}
+.js .grow.in .row:nth-child(7) .fill{transition-delay:.36s}
+.js .split.grow .fill{transform-origin:left center}
+.js .split.grow .fill.r{transform-origin:right center}
+@media (prefers-reduced-motion:reduce){.js .grow .fill{transform:none;transition:none}}
+
+@media (max-width:52rem){
+  .mast{min-height:auto}
+  .mast-body{grid-template-columns:1fr;padding-top:2.25rem;gap:2.25rem}
+  .opener-in{grid-template-columns:1fr}
+  .big{text-align:left}
+  .big span{margin-left:0}
+  .compare{grid-template-columns:1fr;gap:2rem}
+}
+@media (max-width:34rem){
+  .row{grid-template-columns:1fr 8.25rem;gap:.35rem .75rem}
+  .row .lab{grid-column:1 / -1}
+  .half-lab{margin-left:0}
+  .split .val{min-width:auto}
+}
+@media print{.rail,.tip{display:none}.mast,.opener,footer{background:none;color:var(--ink)}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-top">
+    <span class="pub">Feminist Works</span>
+    <span class="tnum">Results as of Wed., Nov. 4, 2026, afternoon ET</span>
+  </div>
+  <div class="mast-body">
+    <div>
+      <h1>A Women's Look at the 2026 Midterms</h1>
+      <p class="dek">Record governorships, Senate firsts, abortion rights on the ballot, trans women winning seats no trans person had held, and the widest view yet of how women voted. Every number is sourced, and every projected call is marked.</p>
+    </div>
+    <div class="hero-fig">
+      <span class="hero-num tnum" aria-hidden="true">17</span>
+      <p class="hero-cap">states elected a woman governor on Tuesday, the most ever.
+        <small>Rutgers Center for American Women and Politics (CAWP), via ABC News. Several calls are projections.</small></p>
+    </div>
+  </div>
+</header>
+
+<nav class="rail" aria-label="Chapters">
+  <ol>
+    <li><a href="#governors">Governors</a></li>
+    <li><a href="#senate">Senate</a></li>
+    <li><a href="#congress">Congress</a></li>
+    <li><a href="#trans">Trans Women</a></li>
+    <li><a href="#ballot">On the Ballot</a></li>
+    <li><a href="#voters">How Women Voted</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ol>
+</nav>
+
+<main>
+<section class="context" aria-label="Context">
+  <p><strong>The backdrop:</strong> Democrats won control of both chambers. As of Wednesday afternoon they held <strong class="tnum">54</strong> Senate seats to <strong class="tnum">44</strong>, a gain of seven, with Alaska and Mississippi still uncalled, and at least <strong class="tnum">237</strong> House seats with 59 races left to call. Party control is context here, not the story. The story is who won, what voters decided about women's bodies and trans lives, and how women cast their ballots. <span class="src">(<a href="https://www.theguardian.com/us-news/ng-interactive/2026/nov/04/midterm-elections-full-results-senate-house-governor-races">The Guardian</a>, <a href="https://www.reuters.com/3fec1b0a85a0/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/">Reuters</a>, <a href="https://apnews.com/article/midterm-election-uncalled-races-b20c577aaffced99155af448bd182fa5">AP</a>)</span></p>
+</section>
+
+<!-- ================= GOVERNORS ================= -->
+<section class="chapter" id="governors" aria-labelledby="h-gov">
+  <div class="opener"><div class="opener-in">
+    <div>
+      <h2 id="h-gov">A Record Year for Women Governors</h2>
+      <p>Ohio, Georgia, Tennessee, and Minnesota will have women governors for the first time. Georgia's is the first Black woman to lead any state, and New Mexico's is the first Native American woman.</p>
+    </div>
+    <div class="big"><b class="tnum">101</b><span>women will hold statewide executive office, a record (CAWP)</span></div>
+  </div></div>
+
+  <div class="body">
+    <h3>The Women Elected Governor</h3>
+    <p>CAWP counts 17 states that elected a woman governor. The reports this page draws on name twelve of them; the other five will be added once they are confirmed.</p>
+    <ul class="roster">
+      <li class="first"><span class="st">GA</span><span class="nm">Keisha Lance Bottoms<span class="pt">D · flip</span></span><span class="ft">First Black woman governor of any state; Georgia's first woman governor</span></li>
+      <li class="first"><span class="st">NM</span><span class="nm">Deb Haaland<span class="pt">D</span></span><span class="ft">First Native American woman governor in U.S. history</span></li>
+      <li class="first"><span class="st">TX</span><span class="nm">Gina Hinojosa<span class="pt">D · flip</span></span><span class="ft">First Latina governor of Texas; defeated Gov. Greg Abbott</span></li>
+      <li class="first"><span class="st">OH</span><span class="nm">Amy Acton<span class="pt">D · flip</span></span><span class="ft">First woman elected governor of Ohio; defeated Vivek Ramaswamy</span></li>
+      <li class="first"><span class="st">TN</span><span class="nm">Marsha Blackburn<span class="pt">R</span></span><span class="ft">First woman to win a governor's race in Tennessee</span></li>
+      <li class="first"><span class="st">MN</span><span class="nm">Amy Klobuchar<span class="pt">D</span></span><span class="ft">Minnesota's first woman governor (both nominees were women)</span></li>
+      <li><span class="st">MI</span><span class="nm">Jocelyn Benson<span class="pt">D</span></span><span class="ft">Newly elected</span></li>
+      <li><span class="st">RI</span><span class="nm">Helena Foulkes<span class="pt">D</span></span><span class="ft">Newly elected</span></li>
+      <li><span class="st">AR</span><span class="nm">Sarah Huckabee Sanders<span class="pt">R</span></span><span class="ft">Reelected</span></li>
+      <li><span class="st">OR</span><span class="nm">Tina Kotek<span class="pt">D</span></span><span class="ft">Reelected; out lesbian governor</span></li>
+      <li><span class="st">NH</span><span class="nm">Kelly Ayotte<span class="pt">R</span></span><span class="ft">Reelected</span></li>
+      <li><span class="st">MA</span><span class="nm">Maura Healey<span class="pt">D</span></span><span class="ft">Reelected after expanding protections for reproductive and transgender health care</span></li>
+      <li class="pending"><span class="st">+5</span><span class="nm">Five more states</span><span class="ft">In CAWP's count of 17, not yet named in the reports reviewed here</span></li>
+    </ul>
+    <p class="src">Most calls are projections. Sources: <a href="https://abc7news.com/story/women-make-history-governor-congressional-races-2026-midterms/20015679/">ABC News / CAWP</a>, <a href="https://www.foxnews.com/politics/first-muslim-senator-first-black-female-governor-2026-midterm-election-results-make-history">Fox News</a>, <a href="https://glaad.org/2026-midterm-election-results-anti-trans-fearmongering-fails-as-pro-equality-candidates-win-nationwide/">GLAAD</a>.</p>
+
+    <figure>
+      <figcaption class="t">Black Women in Statewide Executive Office</figcaption>
+      <p class="sub">At least 18 Black women are set to serve in statewide elected executive offices, up from a previous record of 11.</p>
+      <div class="bars grow">
+        <div class="row" tabindex="0" data-tip="Previous record: 11 Black women in statewide elected executive office at once. Source: CAWP via ABC News."><span class="lab">Previous record</span><div class="trk"><div class="fill" style="width:61.1%;background:var(--slate)"></div></div><span class="val tnum">11</span></div>
+        <div class="row" tabindex="0" data-tip="After Nov. 3, 2026: at least 18. Source: CAWP via ABC News, Nov. 4."><span class="lab">After Nov. 3<small>at least</small></span><div class="trk"><div class="fill" style="width:100%;background:var(--protect)"></div></div><span class="val tnum">18+</span></div>
+      </div>
+    </figure>
+
+    <figure>
+      <figcaption class="t">Women Nominated for Governor by a Major Party</figcaption>
+      <p class="sub">A record 26 general-election nominees, one more than 2022.</p>
+      <div class="bars grow">
+        <div class="row" tabindex="0" data-tip="2022: 25 women were major-party nominees for governor, the prior record. Source: CAWP via ABC News."><span class="lab">2022</span><div class="trk"><div class="fill" style="width:96.2%;background:var(--slate)"></div></div><span class="val tnum">25</span></div>
+        <div class="row" tabindex="0" data-tip="2026: 26 women were major-party nominees for governor. Source: CAWP via ABC News."><span class="lab">2026</span><div class="trk"><div class="fill" style="width:100%;background:var(--protect)"></div></div><span class="val tnum">26</span></div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= SENATE ================= -->
+<section class="chapter" id="senate" aria-labelledby="h-sen">
+  <div class="opener"><div class="opener-in">
+    <div>
+      <h2 id="h-sen">The Senate Gets Its First Native American Woman</h2>
+      <p>Peggy Flanagan's win in Minnesota helped Democrats take the chamber. A second Native woman, Mary Peltola, leads in Alaska by a few hundred votes.</p>
+    </div>
+    <div class="big"><b class="tnum">3</b><span>Black women will serve in the Senate at the same time for the first time</span></div>
+  </div></div>
+
+  <div class="body">
+    <ul class="roster">
+      <li class="first"><span class="st">MN</span><span class="nm">Peggy Flanagan<span class="pt">D</span></span><span class="ft">First Native American woman elected to the U.S. Senate</span></li>
+      <li class="first"><span class="st">IL</span><span class="nm">Juliana Stratton<span class="pt">D</span></span><span class="ft">Joins Sens. Lisa Blunt Rochester and Angela Alsobrooks; Illinois becomes the first state with two women-of-color senators, alongside Tammy Duckworth</span></li>
+      <li class="first"><span class="st">SC</span><span class="nm">Annie Andrews<span class="pt">D · flip</span></span><span class="ft">First woman elected senator from South Carolina; defeated appointed Sen. Darline Graham</span></li>
+      <li class="first"><span class="st">LA</span><span class="nm">Julia Letlow<span class="pt">R</span></span><span class="ft">Louisiana's first Republican woman senator</span></li>
+    </ul>
+
+    <div class="race" data-tip="Alaska Senate, as of Nov. 4 midday: Peltola 102,701 (48.2%), Sullivan 102,075 (47.9%). Too close to call. Source: AP via USA Today; Exa results library." tabindex="0">
+      <div class="race-l"><span><b>Mary Peltola</b> (D) <span class="tnum">48.2%</span></span><span class="prelim">Too close to call</span><span><b>Dan Sullivan</b> (R) <span class="tnum">47.9%</span></span></div>
+      <div class="trk" role="img" aria-label="Alaska Senate: Peltola 48.2 percent, Sullivan 47.9 percent, others 3.9 percent">
+        <div class="seg" style="width:48.2%;background:var(--dem)"></div>
+        <div class="seg" style="width:3.9%;background:var(--line)"></div>
+        <div class="seg" style="width:47.9%;background:var(--rep)"></div>
+      </div>
+      <p class="src" style="margin:.6rem 0 0">Alaska: Peltola leads by 626 votes. A win would make her and Flanagan the first two Native American women in the Senate. A second "Dan Sullivan" on the ballot is under a Justice Department inquiry. (<a href="https://www.usatoday.com/story/news/politics/elections/2026/11/04/alaska-senate-results-dan-sullivan-mary-peltola/92608989007/">USA Today / AP</a>)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONGRESS ================= -->
+<section class="chapter" id="congress" aria-labelledby="h-con">
+  <div class="opener"><div class="opener-in">
+    <div>
+      <h2 id="h-con">More Firsts, but Fewer Women in Congress So Far</h2>
+      <p>CAWP's early projection shows fewer women in the 120th Congress than serve now, even in a Democratic wave. Dozens of House races are uncalled, so the number will move.</p>
+    </div>
+    <div class="big"><b class="tnum">139</b><span>women projected for the next Congress, down from 152 now <span class="prelim" style="display:inline-block;margin-top:.4rem;background:transparent;color:var(--on-plum);border-color:var(--on-plum-soft)">Preliminary</span></span></div>
+  </div></div>
+
+  <div class="body">
+    <figure>
+      <figcaption class="t">Women in Congress</figcaption>
+      <p class="sub">Senate and House combined. The 2027 figure is CAWP's projection as of Nov. 4 and excludes uncalled races.</p>
+      <div class="bars grow">
+        <div class="row" tabindex="0" data-tip="Women serving in the current (119th) Congress: 152. Source: CAWP via ABC News."><span class="lab">Serving now</span><div class="trk"><div class="fill" style="width:100%;background:var(--slate)"></div></div><span class="val tnum">152</span></div>
+        <div class="row" tabindex="0" data-tip="Projected for the 120th Congress, beginning January 2027: 139, as of Nov. 4. Uncalled races excluded. Source: CAWP via ABC News."><span class="lab">Projected, Jan. 2027<small>as of Nov. 4</small></span><div class="trk"><div class="fill" style="width:91.4%;background:var(--protect)"></div></div><span class="val tnum">139</span></div>
+      </div>
+    </figure>
+
+    <h3>House Firsts and Flips</h3>
+    <ul class="roster">
+      <li class="first"><span class="st">CO-1</span><span class="nm">Melat Kiros<span class="pt">D</span></span><span class="ft">First Black woman elected to Congress from Colorado</span></li>
+      <li class="first"><span class="st">NE</span><span class="nm">Denise Powell<span class="pt">D</span></span><span class="ft">First Latina to represent Nebraska in Congress (projected)</span></li>
+      <li><span class="st">NY-17</span><span class="nm">Cait Conley<span class="pt">D · flip</span></span><span class="ft">Army veteran, out LGBTQ; unseated Rep. Mike Lawler</span></li>
+      <li><span class="st">AZ-6</span><span class="nm">JoAnna Mendoza<span class="pt">D</span></span><span class="ft">Marine veteran, out LGBTQ; leading Rep. Juan Ciscomani 53–45, not yet called</span></li>
+      <li><span class="st">CA-48</span><span class="nm">Marni von Wilpert<span class="pt">D</span></span><span class="ft">Out LGBTQ; leading in an open GOP-held seat, ran on reproductive freedom</span></li>
+      <li><span class="st">VI</span><span class="nm">Janelle Sarauw<span class="pt">D</span></span><span class="ft">Leading for U.S. Virgin Islands delegate, about 77%</span></li>
+    </ul>
+    <p class="src">Sources: <a href="https://abc7news.com/story/women-make-history-governor-congressional-races-2026-midterms/20015679/">ABC News / CAWP</a>, <a href="https://www.washingtonblade.com/2026/11/04/record-number-lgbtq-lawmakers-elected-congress-midterms/">Washington Blade</a>. The Blade reports 17 of 18 LGBTQ federal candidates won, a record for Congress.</p>
+  </div>
+</section>
+
+<!-- ================= TRANS ================= -->
+<section class="chapter" id="trans" aria-labelledby="h-trans">
+  <div class="opener"><div class="opener-in">
+    <div>
+      <h2 id="h-trans">Trans Women Won in States That Had Never Elected One</h2>
+      <p>Alabama, Michigan, Washington, Wisconsin, and Florida elected their first trans women, and Georgia elected its first nonbinary lawmaker. Rep. Sarah McBride, the first trans woman in Congress, won a second term.</p>
+    </div>
+    <div class="big"><b class="tnum">6</b><span>states elected their first trans or nonbinary officeholder at these levels</span></div>
+  </div></div>
+
+  <div class="body">
+    <ul class="roster">
+      <li class="first"><span class="st">DE</span><span class="nm">Sarah McBride<span class="pt">D · U.S. House</span></span><span class="ft">Reelected; the first and only out trans member of Congress</span></li>
+      <li class="first"><span class="st">AL</span><span class="nm">Allison Montgomery<span class="pt">D · State House 25</span></span><span class="ft">Alabama's first trans lawmaker; unseated Republican Rep. Phillip Rigsby</span></li>
+      <li class="first"><span class="st">WA</span><span class="nm">Jaelynn Scott<span class="pt">D · State House 37</span></span><span class="ft">Washington's first trans lawmaker and the first out Black trans woman state lawmaker in the country; 88%</span></li>
+      <li class="first"><span class="st">MI</span><span class="nm">Joanna Whaley<span class="pt">D · State House 2</span></span><span class="ft">Michigan's first trans legislator; hospital chaplain and conversion-therapy survivor; 63%</span></li>
+      <li class="first"><span class="st">WI</span><span class="nm">Dina Nina Martinez-Rutherford<span class="pt">D · State Assembly 76</span></span><span class="ft">Wisconsin's first trans legislator; over 90%</span></li>
+      <li class="first"><span class="st">FL</span><span class="nm">Quinnie Perez<span class="pt">Orange Co. Soil and Water</span></span><span class="ft">First trans woman elected to any office in Florida (projected)</span></li>
+      <li class="first"><span class="st">GA</span><span class="nm">Bentley Hudgins<span class="pt">D · State House 90</span></span><span class="ft">Georgia's first nonbinary and first Japanese American lawmaker (they/them)</span></li>
+      <li><span class="st">MN</span><span class="nm">Leigh Finke<span class="pt">D · State House</span></span><span class="ft">Reelected</span></li>
+    </ul>
+
+    <blockquote class="pull">“I'm going to work especially hard for those who hate me, because they deserve a better Alabama as much as anyone.”
+      <cite>Allison Montgomery, Alabama's first trans lawmaker, on election night (via The 19th)</cite></blockquote>
+
+    <h3>They Ran Where No Democrat Had in Years</h3>
+    <p>Bella Bautista, the first trans woman to win a legislative primary in Georgia, lost in House District 14, a seat no Democrat had contested since 2010. In Kansas, Bobby Robertson Jr., a trans woman and financial analyst, lost House District 73 after becoming the first Democrat to run for it in 10 years.</p>
+
+    <h3>The Anti-Trans Ad Money Didn't Buy Wins</h3>
+    <div class="compare">
+      <div class="mini">
+        <div class="num tnum">$78M<small>Texas</small></div>
+        <p>in anti-trans campaign ads, per GLAAD. The Republican governor and Senate candidates there lost.</p>
+        <div class="num tnum">$26M<small>Ohio</small></div>
+        <p>in a failed effort, per GLAAD. Candidates also lost in Iowa, Kansas, and South Carolina where such ads ran.</p>
+      </div>
+      <div class="mini">
+        <figure style="margin:0">
+          <figcaption class="t">Which Party Is Better on Transgender Policy?</figcaption>
+          <p class="sub">All voters, national exit poll</p>
+          <div class="bars grow">
+            <div class="row" tabindex="0" data-tip="45% of voters said the Democratic Party is better able to handle policies about transgender people. Source: NBC News Exit Poll."><span class="lab">Democratic Party</span><div class="trk"><div class="fill" style="width:45%;background:var(--dem)"></div></div><span class="val tnum">45%</span></div>
+            <div class="row" tabindex="0" data-tip="34% said the Republican Party. The remainder chose neither. Source: NBC News Exit Poll."><span class="lab">Republican Party</span><div class="trk"><div class="fill" style="width:34%;background:var(--rep)"></div></div><span class="val tnum">34%</span></div>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <p class="src">Sources: <a href="https://www.advocate.com/politics/election/trans-nonbinary-candidates-2026-midterms">The 19th via the Advocate</a>, <a href="https://www.advocate.com/politics/election/lgbtq-midterm-election-winners-2026">The Advocate</a>, <a href="https://glaad.org/2026-midterm-election-results-anti-trans-fearmongering-fails-as-pro-equality-candidates-win-nationwide/">GLAAD</a> (an advocacy group; the ad totals are its figures), <a href="https://www.nbcnews.com/politics/2026-elections/exit-polls">NBC News Exit Poll</a>.</p>
+  </div>
+</section>
+
+<!-- ================= BALLOT ================= -->
+<section class="chapter" id="ballot" aria-labelledby="h-ballot">
+  <div class="opener"><div class="opener-in">
+    <div>
+      <h2 id="h-ballot">Abortion Rights Mostly Held. Trans Rights Mostly Didn't.</h2>
+      <p>Voters protected abortion rights in Nevada, Virginia, and Missouri, but kept Idaho's near-total ban. Most measures restricting trans people passed or were leading; the one that failed was bundled with an abortion ban.</p>
+    </div>
+    <div class="big"><b class="tnum">3 of 4</b><span>abortion measures went the way abortion-rights supporters wanted</span></div>
+  </div></div>
+
+  <div class="body">
+    <figure>
+      <figcaption class="t">Abortion and Equality Measures: Share Voting Yes</figcaption>
+      <p class="sub">The line marks 50%. Bar color shows what a yes vote does to rights.</p>
+      <div class="legend"><span><i style="background:var(--protect)"></i>Yes protects rights</span><span><i style="background:var(--restrict)"></i>Yes restricts rights</span></div>
+      <div class="bars grow">
+        <div class="row" tabindex="0" data-tip="Nevada Question 6, enshrining abortion rights in the state constitution (second required vote). Yes 63.3%, 86% of expected vote in. Passed. Source: NBC News."><span class="lab">Nevada Q6<small>Abortion right in constitution</small></span><div class="trk"><div class="fill" style="width:63.3%;background:var(--protect)"></div><span class="half"></span></div><span class="val tnum">63.3% <span class="out ok">Passed</span></span></div>
+        <div class="row" tabindex="0" data-tip="Virginia Question 1, Right to Reproductive Freedom amendment. Yes 62.4%, 96% in. Passed. Source: NBC News."><span class="lab">Virginia Q1<small>Reproductive freedom amendment</small></span><div class="trk"><div class="fill" style="width:62.4%;background:var(--protect)"></div><span class="half"></span></div><span class="val tnum">62.4% <span class="out ok">Passed</span></span></div>
+        <div class="row" tabindex="0" data-tip="Idaho Proposition 1, which would have overturned the near-total abortion ban and protected abortion until viability. Yes 44.1%, 99% in. Failed; the ban stands. Source: NBC News, Idaho Capital Sun."><span class="lab">Idaho Prop. 1<small>Repeal near-total ban</small></span><div class="trk"><div class="fill" style="width:44.1%;background:var(--protect)"></div><span class="half"></span></div><span class="val tnum">44.1% <span class="out no">Failed</span></span></div>
+        <div class="row" tabindex="0" data-tip="Missouri Amendment 3, which would have repealed the 2024 abortion-rights amendment and limited gender-affirming care. Yes 44.5%, 98.5% in. Failed, so abortion rights and trans care held. Source: NBC News, Yahoo News."><span class="lab">Missouri Amend. 3<small>Repeal abortion rights, ban trans care</small></span><div class="trk"><div class="fill" style="width:44.5%;background:var(--restrict)"></div><span class="half"></span></div><span class="val tnum">44.5% <span class="out ok">Failed</span></span></div>
+        <div class="row" tabindex="0" data-tip="Vermont Question 4, establishing equal protection in the state constitution. Yes 79.1%, 72% in. Passed. Source: NBC News."><span class="lab">Vermont Q4<small>Equal protection</small></span><div class="trk"><div class="fill" style="width:79.1%;background:var(--protect)"></div><span class="half"></span></div><span class="val tnum">79.1% <span class="out ok">Passed</span></span></div>
+        <div class="row" tabindex="0" data-tip="Virginia Question 2, removing the same-sex marriage ban from the constitution. Yes 57.4%, 97% in. Passed, per GLAAD. Source: NBC News."><span class="lab">Virginia Q2<small>Remove same-sex marriage ban</small></span><div class="trk"><div class="fill" style="width:57.4%;background:var(--protect)"></div><span class="half"></span></div><span class="val tnum">57.4% <span class="out ok">Passed</span></span></div>
+      </div>
+      <details class="tv"><summary>View as table</summary>
+        <table><thead><tr><th>Measure</th><th>Yes</th><th>Result</th><th>Counted</th></tr></thead><tbody>
+          <tr><td>Nevada Q6, abortion right</td><td>63.3%</td><td>Passed</td><td>86%</td></tr>
+          <tr><td>Virginia Q1, reproductive freedom</td><td>62.4%</td><td>Passed</td><td>96%</td></tr>
+          <tr><td>Idaho Prop. 1, repeal abortion ban</td><td>44.1%</td><td>Failed</td><td>99%</td></tr>
+          <tr><td>Missouri Amend. 3, repeal abortion rights and ban trans care</td><td>44.5%</td><td>Failed</td><td>98.5%</td></tr>
+          <tr><td>Vermont Q4, equal protection</td><td>79.1%</td><td>Passed</td><td>72%</td></tr>
+          <tr><td>Virginia Q2, remove same-sex marriage ban</td><td>57.4%</td><td>Passed</td><td>97%</td></tr>
+        </tbody></table>
+      </details>
+    </figure>
+    <p>Idaho is the setback: voters kept one of the country's strictest bans, so it will not join the red states that used the ballot to restore abortion access. Missouri is the mirror image. Two years after voters there struck down the state's ban, they refused the legislature's attempt to bring it back, and in doing so also rejected new limits on gender-affirming care.</p>
+
+    <figure>
+      <figcaption class="t">Measures Targeting Trans People: Share Voting Yes</figcaption>
+      <p class="sub">Every one of these would restrict trans people. Several were still being counted.</p>
+      <div class="bars grow">
+        <div class="row" tabindex="0" data-tip="Arizona Prop. 318: bars trans students and adults from school bathrooms, locker rooms, and sports matching their gender. Yes 58.9%, 84% in. Passed. Source: NBC News."><span class="lab">Arizona Prop. 318<small>School facilities and sports</small></span><div class="trk"><div class="fill" style="width:58.9%;background:var(--restrict)"></div><span class="half"></span></div><span class="val tnum">58.9% <span class="out no">Passed</span></span></div>
+        <div class="row" tabindex="0" data-tip="Colorado Prop. 134: school sports by sex assigned at birth. Yes 52.4%, 76% in. Too early to call. Source: NBC News."><span class="lab">Colorado Prop. 134<small>School sports</small></span><div class="trk"><div class="fill" style="width:52.4%;background:var(--restrict)"></div><span class="half"></span></div><span class="val tnum">52.4% <span class="out tbd">Too early</span></span></div>
+        <div class="row" tabindex="0" data-tip="Colorado Prop. 135: bans gender-affirming surgery for minors. Yes 51.9%, 76% in. Too early to call. Source: NBC News."><span class="lab">Colorado Prop. 135<small>Minors' gender-affirming surgery</small></span><div class="trk"><div class="fill" style="width:51.9%;background:var(--restrict)"></div><span class="half"></span></div><span class="val tnum">51.9% <span class="out tbd">Too early</span></span></div>
+      </div>
+      <ul class="prose" style="margin-top:1.25rem;font-size:1rem">
+        <li><strong>Nebraska</strong> approved a ban on trans girls and women playing on girls' and women's teams. Vote share not reported in the sources reviewed.</li>
+        <li><strong>Washington</strong>'s girls' sports measure, which would also require a doctor to verify the sex of every K–12 girl who plays, appeared on track to pass. Vote share not yet reported.</li>
+        <li><strong>Missouri</strong> was the only state where new trans restrictions failed, because voters rejected the abortion repeal they were bundled with.</li>
+      </ul>
+      <details class="tv"><summary>View as table</summary>
+        <table><thead><tr><th>Measure</th><th>Yes</th><th>Status</th></tr></thead><tbody>
+          <tr><td>Arizona Prop. 318</td><td>58.9%</td><td>Passed</td></tr>
+          <tr><td>Colorado Prop. 134</td><td>52.4%</td><td>Too early to call</td></tr>
+          <tr><td>Colorado Prop. 135</td><td>51.9%</td><td>Too early to call</td></tr>
+          <tr><td>Nebraska sports measure</td><td>n/a</td><td>Passed</td></tr>
+          <tr><td>Washington IL26-638</td><td>n/a</td><td>On track to pass</td></tr>
+          <tr><td>Missouri Amend. 3</td><td>44.5%</td><td>Failed</td></tr>
+        </tbody></table>
+      </details>
+    </figure>
+    <p class="src">Sources: <a href="https://www.nbcnews.com/politics/2026-elections/ballot-measures">NBC News ballot tracker</a>, <a href="https://www.yahoo.com/news/politics/article/abortion-transgender-rights-and-voter-id-ballot-measure-results-from-the-2026-midterms-191855364.html">Yahoo News</a>, <a href="https://idahocapitalsun.com/2026/11/03/live-updates-heres-the-latest-on-idahos-2026-general-election/">Idaho Capital Sun</a>, <a href="https://glaad.org/fact-sheet-for-reporters-lgbtq-related-ballot-measures-in-the-2026-midterm-elections/">GLAAD fact sheet</a>. Shares are as of Wednesday afternoon.</p>
+  </div>
+</section>
+
+<!-- ================= VOTERS ================= -->
+<section class="chapter" id="voters" aria-labelledby="h-vot">
+  <div class="opener"><div class="opener-in">
+    <div>
+      <h2 id="h-vot">How Women Voted</h2>
+      <p>Women were 53% of the electorate and backed Democratic House candidates by 19 points. Men split almost evenly.</p>
+    </div>
+    <div class="big"><b class="tnum">59–40</b><span>women's House vote, Democratic to Republican (NBC News Exit Poll)</span></div>
+  </div></div>
+
+  <div class="body">
+    <figure>
+      <figcaption class="t">House Vote by Gender and Race</figcaption>
+      <p class="sub">Share voting for the Democratic and Republican House candidate. Share of the electorate in parentheses.</p>
+      <div class="legend"><span><i style="background:var(--dem)"></i>Democrat</span><span><i style="background:var(--rep)"></i>Republican</span></div>
+      <div class="bars split grow">
+        <div class="row" tabindex="0" data-tip="Women (53% of voters): 59% Democrat, 40% Republican. NBC News Exit Poll."><span class="lab">All women<small>53%</small></span><div class="trk"><div class="fill d" style="width:59%"></div><span style="flex:1"></span><div class="fill r" style="width:40%"></div></div><span class="val tnum"><b>59</b> – 40</span></div>
+        <div class="row" tabindex="0" data-tip="Men (47%): 50% Democrat, 48% Republican. NBC News Exit Poll."><span class="lab">All men<small>47%</small></span><div class="trk"><div class="fill d" style="width:50%"></div><span style="flex:1"></span><div class="fill r" style="width:48%"></div></div><span class="val tnum"><b>50</b> – 48</span></div>
+        <div class="row" tabindex="0" data-tip="Black women (5%): 93% Democrat, 6% Republican. NBC News Exit Poll."><span class="lab">Black women<small>5%</small></span><div class="trk"><div class="fill d" style="width:93%"></div><span style="flex:1"></span><div class="fill r" style="width:6%"></div></div><span class="val tnum"><b>93</b> – 6</span></div>
+        <div class="row" tabindex="0" data-tip="Latina women (5%): 68% Democrat, 30% Republican. NBC News Exit Poll."><span class="lab">Latina women<small>5%</small></span><div class="trk"><div class="fill d" style="width:68%"></div><span style="flex:1"></span><div class="fill r" style="width:30%"></div></div><span class="val tnum"><b>68</b> – 30</span></div>
+        <div class="row" tabindex="0" data-tip="White women (38%): 52% Democrat, 46% Republican. NBC News Exit Poll."><span class="lab">White women<small>38%</small></span><div class="trk"><div class="fill d" style="width:52%"></div><span style="flex:1"></span><div class="fill r" style="width:46%"></div></div><span class="val tnum"><b>52</b> – 46</span></div>
+        <div class="row" tabindex="0" data-tip="White women with college degrees (18%): 64% Democrat, 35% Republican. NBC News Exit Poll."><span class="lab">White women, college grads<small>18%</small></span><div class="trk"><div class="fill d" style="width:64%"></div><span style="flex:1"></span><div class="fill r" style="width:35%"></div></div><span class="val tnum"><b>64</b> – 35</span></div>
+        <div class="row" tabindex="0" data-tip="Independent women (14%): 63% Democrat, 34% Republican, versus independent men at 54-42. NBC News Exit Poll."><span class="lab">Independent women<small>14%</small></span><div class="trk"><div class="fill d" style="width:63%"></div><span style="flex:1"></span><div class="fill r" style="width:34%"></div></div><span class="val tnum"><b>63</b> – 34</span></div>
+        <div class="row" tabindex="0" data-tip="Voters who identify another way (1%): 87% Democrat, 10% Republican. NBC News Exit Poll."><span class="lab">Identify another way<small>1%</small></span><div class="trk"><div class="fill d" style="width:87%"></div><span style="flex:1"></span><div class="fill r" style="width:10%"></div></div><span class="val tnum"><b>87</b> – 10</span></div>
+      </div>
+      <details class="tv"><summary>View as table</summary>
+        <table><thead><tr><th>Group</th><th>Share of voters</th><th>Democrat</th><th>Republican</th></tr></thead><tbody>
+          <tr><td>Women</td><td>53%</td><td>59%</td><td>40%</td></tr>
+          <tr><td>Men</td><td>47%</td><td>50%</td><td>48%</td></tr>
+          <tr><td>Black women</td><td>5%</td><td>93%</td><td>6%</td></tr>
+          <tr><td>Latina women</td><td>5%</td><td>68%</td><td>30%</td></tr>
+          <tr><td>White women</td><td>38%</td><td>52%</td><td>46%</td></tr>
+          <tr><td>White women, college graduates</td><td>18%</td><td>64%</td><td>35%</td></tr>
+          <tr><td>Independent women</td><td>14%</td><td>63%</td><td>34%</td></tr>
+          <tr><td>Independent men</td><td>18%</td><td>54%</td><td>42%</td></tr>
+          <tr><td>Identify another way</td><td>1%</td><td>87%</td><td>10%</td></tr>
+          <tr><td>White men</td><td>35%</td><td>45%</td><td>53%</td></tr>
+          <tr><td>Black men</td><td>4%</td><td>86%</td><td>12%</td></tr>
+          <tr><td>Latino men</td><td>5%</td><td>58%</td><td>39%</td></tr>
+        </tbody></table>
+      </details>
+    </figure>
+
+    <h3>Young Women Led the Youth Vote</h3>
+    <div class="compare">
+      <div class="mini">
+        <div class="num tnum">69%<small>of young women</small></div>
+        <p>voted for a Democratic House candidate, against 58% of young men. Young men swung hard: in 2024, 56% of them backed Donald Trump.</p>
+      </div>
+      <div class="mini">
+        <div class="pair grow">
+          <div class="row" tabindex="0" data-tip="Voters 18–29, women: 69% voted Democratic for House. Source: Tufts CIRCLE (NORC data)."><span>Young women</span><div class="trk"><div class="fill" style="width:69%;background:var(--dem)"></div></div><span class="tnum">69%</span></div>
+          <div class="row" tabindex="0" data-tip="Voters 18–29, men: 58% voted Democratic for House. Source: Tufts CIRCLE."><span>Young men</span><div class="trk"><div class="fill" style="width:58%;background:var(--dem)"></div></div><span class="tnum">58%</span></div>
+          <div class="row" tabindex="0" data-tip="Young LGB+ voters (gay, lesbian, bisexual, or something else): 86% voted Democratic for House. Source: Tufts CIRCLE."><span>LGB+ youth</span><div class="trk"><div class="fill" style="width:86%;background:var(--dem)"></div></div><span class="tnum">86%</span></div>
+        </div>
+        <p style="margin-top:.75rem">Democratic House vote, ages 18–29. More than 80% of young Black and AAPI women voted Democratic.</p>
+      </div>
+    </div>
+    <p class="src">Sources: <a href="https://www.nbcnews.com/politics/2026-elections/exit-polls">NBC News Exit Poll</a> (in-person, mail, phone, and online interviews in 45 states), <a href="https://circle.tufts.edu/youth-vote-choice-demographics-2026-midterms">Tufts CIRCLE</a>. Exit polls are estimates and may be reweighted as counts finish.</p>
+  </div>
+</section>
+</main>
+
+<section class="sources" id="sources" aria-labelledby="h-src">
+  <h2 id="h-src">Sources</h2>
+  <p class="src" style="margin:0 0 1rem;max-width:var(--col)">All reporting from Nov. 3–4, 2026. Results change as ballots are counted; this page reflects Wednesday afternoon Eastern time. The AP live results page is at <a href="https://apnews.com/live/midterm-election-2026">apnews.com/live/midterm-election-2026</a>.</p>
+  <ol>
+    <li><a href="https://abc7news.com/story/women-make-history-governor-congressional-races-2026-midterms/20015679/">ABC News, “Women make history in governor, congressional races”</a> (CAWP figures)</li>
+    <li><a href="https://www.nbcnews.com/politics/2026-elections/exit-polls">NBC News, 2026 National Exit Poll</a></li>
+    <li><a href="https://www.nbcnews.com/politics/2026-elections/ballot-measures">NBC News, 2026 ballot measure results</a></li>
+    <li><a href="https://www.yahoo.com/news/politics/article/abortion-transgender-rights-and-voter-id-ballot-measure-results-from-the-2026-midterms-191855364.html">Yahoo News, “Abortion, transgender rights and voter ID”</a></li>
+    <li><a href="https://www.advocate.com/politics/election/trans-nonbinary-candidates-2026-midterms">The 19th via the Advocate, “These trans and nonbinary candidates just made history”</a></li>
+    <li><a href="https://www.advocate.com/politics/election/lgbtq-midterm-election-winners-2026">The Advocate, “Rainbow Wave”</a></li>
+    <li><a href="https://www.washingtonblade.com/2026/11/04/record-number-lgbtq-lawmakers-elected-congress-midterms/">Washington Blade, “Record number of LGBTQ lawmakers elected to Congress”</a></li>
+    <li><a href="https://glaad.org/2026-midterm-election-results-anti-trans-fearmongering-fails-as-pro-equality-candidates-win-nationwide/">GLAAD, 2026 election results</a></li>
+    <li><a href="https://www.foxnews.com/politics/first-muslim-senator-first-black-female-governor-2026-midterm-election-results-make-history">Fox News, “2026 midterm election results make history”</a></li>
+    <li><a href="https://circle.tufts.edu/youth-vote-choice-demographics-2026-midterms">Tufts CIRCLE, youth vote choice</a></li>
+    <li><a href="https://www.usatoday.com/story/news/politics/elections/2026/11/04/alaska-senate-results-dan-sullivan-mary-peltola/92608989007/">USA Today, Alaska Senate results</a></li>
+    <li><a href="https://www.theguardian.com/us-news/ng-interactive/2026/nov/04/midterm-elections-full-results-senate-house-governor-races">The Guardian, full results</a></li>
+    <li><a href="https://www.reuters.com/3fec1b0a85a0/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/">Reuters, “Democrats seize Congress”</a></li>
+    <li><a href="https://apnews.com/article/midterm-election-uncalled-races-b20c577aaffced99155af448bd182fa5">AP, races not yet called</a></li>
+    <li><a href="https://idahocapitalsun.com/2026/11/03/live-updates-heres-the-latest-on-idahos-2026-general-election/">Idaho Capital Sun, Idaho results</a></li>
+  </ol>
+</section>
+
+<footer>
+  <span class="pub">Feminist Works</span>
+  Results are preliminary as of Nov. 4, 2026. Projected calls are marked. Corrections are welcome.
+</footer>
+
+<div class="tip" role="tooltip" id="tip"></div>
+
+<script>
+(function(){
+  var root=document.documentElement; root.classList.add('js');
+  // grow bars into view
+  var groups=document.querySelectorAll('.grow');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.35});
+    groups.forEach(function(g){io.observe(g)});
+  } else groups.forEach(function(g){g.classList.add('in')});
+
+  // tooltip
+  var tip=document.getElementById('tip'), cur=null;
+  function place(x,y){var w=tip.offsetWidth,h=tip.offsetHeight;var l=Math.min(window.innerWidth-w-12,Math.max(12,x+14));var t=y-h-14;if(t<12)t=y+18;tip.style.left=l+'px';tip.style.top=t+'px';}
+  function show(el,x,y){cur=el;tip.textContent=el.getAttribute('data-tip');tip.classList.add('on');el.setAttribute('aria-describedby','tip');place(x,y);}
+  function hide(){if(cur)cur.removeAttribute('aria-describedby');cur=null;tip.classList.remove('on');}
+  document.querySelectorAll('[data-tip]').forEach(function(el){
+    el.addEventListener('pointerenter',function(e){show(el,e.clientX,e.clientY)});
+    el.addEventListener('pointermove',function(e){if(cur===el)place(e.clientX,e.clientY)});
+    el.addEventListener('pointerleave',hide);
+    el.addEventListener('focus',function(){var r=el.getBoundingClientRect();show(el,r.left+r.width/2,r.top)});
+    el.addEventListener('blur',hide);
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')hide()});
+  window.addEventListener('scroll',function(){if(cur&&document.activeElement!==cur)hide()},{passive:true});
+
+  // rail current chapter
+  var links=[].slice.call(document.querySelectorAll('.rail a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.removeAttribute('aria-current')});var a=map[e.target.id];if(a){a.setAttribute('aria-current','true');var ol=a.closest('ol'),l=a.offsetLeft,r=l+a.offsetWidth;if(l<ol.scrollLeft||r>ol.scrollLeft+ol.clientWidth){ol.scrollTo({left:l-16,behavior:'smooth'});}}}})},{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)ro.observe(s)});
+  }
+})();
+</script>
+</body>
+</html>
